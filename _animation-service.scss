@@ -1,0 +1,152 @@
+.item {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 2em;
+  // object-fit: cover;
+  // justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px 50px 20px 50px;
+  .item-image {
+    width: 55%;
+    height: 100%;
+    :hover {
+      transform: scale(1.1, 1.1);
+    }
+    overflow: hidden;
+    // border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
+    // border-radius: 10px 0px 0px 10px;
+  }
+  .item-image img {
+    width: 100%;
+    height: 100%;
+    transition: 0.9s;
+  }
+
+  .item-text {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    align-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background: #eba953d7;
+    color: rgb(255, 249, 249);
+    right: 70px;
+    width: 50%;
+    height: 75%;
+    justify-content: center;
+    font-size: large;
+    border-radius: 5px;
+  }
+  .item-text-left {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+    align-content: center;
+    align-items: center;
+    padding: 10px 10px;
+    background: #eba953d7;
+    color: rgb(255, 249, 249);
+    left: 70px;
+    width: 50%;
+    height: 75%;
+    justify-content: center;
+    font-size: large;
+    border-radius: 5px;
+  }
+}
+
+.fade-aa {
+  animation: fadeIn 0.2s ease 0.3s 1 normal;
+}
+.item-text p + p {
+  margin-top: 1em;
+}
+.item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.anim-box.fade-left.is-animated {
+  animation: fade-left 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+.anim-box.fade-right.is-animated {
+  animation: fade-right 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fade-right {
+  0% {
+    transform: translateX(-300px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.item-image-p {
+  background-color: #f7b977;
+}
+
+.fade {
+  animation: fadeIn 0.2s ease 0.3s 1 normal;
+}
+@keyframes fadeIn {
+  /*animation-nameで設定した値を書く*/
+  0% {
+    opacity: 0;
+  } /*アニメーション開始時は不透明度0%*/
+  100% {
+    opacity: 1;
+  } /*アニメーション終了時は不透明度100%*/
+}
+
+.fade-left.is-animated.active {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.fade-right.is-animated.active {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.fade {
+  b {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1.2s;
+}

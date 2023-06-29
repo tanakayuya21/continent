@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0px;
+  background-color: #ffffff;
+}
+
+.top {
+  margin-left: 5px;
+  padding: 9px 21px;
+  // border: 1.5px solid black;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: black;
+  font-size: 15px;
+}
+
+.editmember {
+  margin-left: 5px;
+  padding: 9px 21px;
+  border: 1.5px solid #61cbb8;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #61cbb8;
+  color: #fff;
+  font-size: 15px;
+}
+
+.deletemember {
+  margin-left: 5px;
+  padding: 9px 21px;
+  // border: 1.5px solid black;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: black;
+  font-size: 15px;
+}
+
+.loginmail {
+  // margin-left: 5px;
+  padding: 9px 0px;
+  // border: 1.5px solid black;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: black;
+  font-size: 15px;
+}
+
+.loginpass {
+  margin-left: 5px;
+  padding: 9px 0px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  // background-color:#005500;
+  color: black;
+  font-size: 15px;
+}
+
+.member_login_button {
+  margin-left: 5px;
+  width: 100%;
+  padding: 9px 21px;
+  border: 1.5px solid #61cbb8;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #61cbb8;
+  color: #fff;
+  font-size: 15px;
+}
+
+.new-entry {
+  a {
+    margin-left: 5px;
+    width: 100%;
+    padding: 9px 21px;
+    // border: 1.5px solid black;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #61cbb8;
+    color: #fff;
+    font-size: 15px;
+  }
+}
+
+.send {
+  input[name="regmember"] {
+    margin-left: 5px;
+    width: 100%;
+    padding: 9px 21px;
+    // border: 1.5px solid black;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #61cbb8;
+    color: #fff;
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,65 @@
+// @import url(https://fonts.dgoogleapis.com/css?family=Raleway:400, 500, 800);
+.snip1135 {
+  font-family: "Raleway", Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.5s ease;
+
+  li {
+    display: inline-block;
+    list-style: outside none none;
+    // margin: 0 3em;
+    padding: 0 3em;
+  }
+  transition: all 0.5s ease;
+
+  a {
+    // padding: 0.5em 0;
+    // color: #622d18;
+    // position: relative;
+    // letter-spacing: 5px;
+    // text-decoration: none;
+
+    &:hover:before {
+      opacity: 1;
+      width: 100%;
+    }
+
+    &:hover:after {
+      max-width: 0%;
+      color: #ee7800;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      -webkit-transition: all 0.45s ease;
+      transition: all 0.45s ease-in-out;
+      color: #ee7800;
+    }
+
+    &:before {
+      bottom: 0;
+      display: block;
+      height: 3px;
+      width: 0%;
+      content: "";
+      color: #ee7800;
+      background-color: #ee7800;
+    }
+
+    &:after {
+      left: 0;
+      top: 0;
+      padding: 0.5em 0;
+      position: absolute;
+      content: attr(data-hover);
+      color: #008080;
+      white-space: nowrap;
+      max-width: 0%;
+      overflow: hidden;
+    }
+  }
+}

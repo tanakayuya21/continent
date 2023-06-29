@@ -1,0 +1,130 @@
+.post-box {
+  padding: 16px 48px;
+  display: flex;
+  border-bottom: 1px solid #f7b977;
+
+  .image {
+    height: 100px;
+    flex: 0 0 100px;
+    border-radius: 10px;
+    background-color: bisque;
+  }
+
+  .caption {
+    flex: 1 0 0;
+    margin-left: 16px;
+
+    .title {
+      color: #622d18;
+      display: table-cell;
+      font-size: 20px;
+    }
+
+    .detail {
+      display: table-cell;
+      vertical-align: top;
+      font-size: small;
+    }
+  }
+}
+
+.post-new-box {
+  padding: 20px 0;
+  display: flex;
+  border-bottom: 1px solid #f7b977;
+  margin: 0 198px;
+
+  .image {
+    height: 100px;
+    flex: 0 0 100px;
+    border-radius: 10px;
+    background-color: bisque;
+  }
+
+  .caption {
+    flex: 1 0 0;
+    margin-left: 16px;
+
+    .title {
+      color: #622d18;
+      display: table-cell;
+      font-size: 20px;
+    }
+
+    .detail {
+      display: table-cell;
+      vertical-align: top;
+      font-size: small;
+    }
+  }
+}
+
+.top_image_ac {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  background-image: url(images/bg_header.jpg);
+  object-fit: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+
+  &:before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .image-home-hd {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    top: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .over {
+    position: absolute;
+    line-height: 100px;
+
+    .title {
+      font-size: 100px;
+    }
+  }
+
+  span::before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .label_ac {
+    position: absolute;
+    top: 35%;
+    right: 45%;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 50px;
+    // background-color: #eb6100;
+    text-align: center;
+    border: none;
+  }
+}
